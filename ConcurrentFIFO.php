@@ -23,8 +23,8 @@ class ConcurrentFIFO
     const INDEX_UNPACK = 'Vstart/Vend/Vlen/Vchecksum';
     const INDEX_SIZE   = 16;
 
-    const LENGTH_FORMAT = 'v';
-    const LENGTH_SIZE   = 2;
+    const LENGTH_FORMAT = 'V'; //32 bit unsigned
+    const LENGTH_SIZE   = 4;
 
     // optimized for large files
     const BUFSIZ     = 131072; //128K //8192; // copy 8K chunks when compacting
